@@ -1,13 +1,12 @@
 class CartFunctions():
 
     def __init__(self):
-        super().__init__()
         self.items =  {}
 
     def add_to_cart(self,itemName,price):
-
-        if itemName != self.items:
-            self.items[itemName] = {"Price: ":price}
+            if itemName != self.items:
+                 self.items[itemName] = {"Price: ":price}
+     
     def __repr__(self):
         return str(self.items)
 
